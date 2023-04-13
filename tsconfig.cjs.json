@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "outDir": "./lib/cjs",
+    "emitDeclarationOnly": false
+  },
+  "extends": "./tsconfig.json"
+}
