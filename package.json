@@ -1,17 +1,12 @@
 {
   "name": "@tronicboy/lit-observe-directive",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A directive for Lit allowing use of RxJS Observables in the html tag",
   "main": "lib/mjs/index.js",
   "exports": {
     "import": "./lib/mjs/index.js",
     "require": "./lib/cjs/index.js"
   },
-  "files": [
-    "lib/**/*",
-    "types/**/*",
-    "README.md"
-  ],
   "repository": {
     "url": "https://github.com/tronicboy1/lit-observe-directive",
     "type": "git"
