@@ -1,6 +1,6 @@
 {
   "name": "@tronicboy/lit-observe-directive",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A directive for Lit allowing use of RxJS Observables in the html tag",
   "main": "lib/mjs/index.js",
   "exports": {
@@ -8,8 +8,8 @@
     "require": "./lib/cjs/index.js"
   },
   "files": [
-    "./lib/**/*",
-    "./types/**/*",
+    "./lib",
+    "./types",
     "./README.md"
   ],
   "repository": {
@@ -20,7 +20,7 @@
     "rxjs",
     "lit"
   ],
-  "types": "types/index.d.ts",
+  "types": "./types/index.d.ts",
   "author": "Austin J. Mayer",
   "license": "MIT",
   "private": false,
