@@ -9,7 +9,8 @@
   },
   "files": [
     "lib/**/*",
-    "types/**/*"
+    "types/**/*",
+    "README.md"
   ],
   "repository": {
     "url": "https://github.com/tronicboy1/lit-observe-directive",
