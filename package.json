@@ -5,7 +5,8 @@
   "main": "lib/mjs/index.js",
   "exports": {
     "import": "./lib/mjs/index.js",
-    "require": "./lib/cjs/index.js"
+    "require": "./lib/cjs/index.js",
+    "types": "./types/index.d.ts"
   },
   "files": [
     "lib",
