@@ -1,6 +1,6 @@
 {
   "name": "@tronicboy/lit-observe-directive",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "A directive for Lit allowing use of RxJS Observables in the html tag",
   "main": "lib/mjs/index.js",
   "exports": {
