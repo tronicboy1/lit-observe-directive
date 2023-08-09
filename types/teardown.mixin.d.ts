@@ -1,12 +1,12 @@
 import { Subject } from 'rxjs';
 type Constructor<T = {}> = new (...args: any[]) => T;
 interface WebComponentWithPossibleConnectedCallback extends HTMLElement {
-    connectedCallback?(): void;
+    disconnectedCallback?(): void;
 }
 export declare function TeardownableComponent<T extends Constructor<WebComponentWithPossibleConnectedCallback>>(base: T): {
     new (...args: any[]): {
         teardown$: Subject<void>;
-        connectedCallback(): void;
+        disconnectedCallback(): void;
         accessKey: string;
         readonly accessKeyLabel: string;
         autocapitalize: string;

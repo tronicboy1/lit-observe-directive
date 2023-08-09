@@ -3,7 +3,7 @@ import {Subject} from 'rxjs';
 type Constructor<T = {}> = new (...args: any[]) => T;
 
 interface WebComponentWithPossibleConnectedCallback extends HTMLElement {
-  connectedCallback?(): void;
+  disconnectedCallback?(): void;
 }
 
 export function TeardownableComponent<
@@ -12,9 +12,9 @@ export function TeardownableComponent<
   class TeardownMixin extends base {
     teardown$ = new Subject<void>();
 
-    connectedCallback() {
-      if (super.connectedCallback) {
-        super.connectedCallback();
+    disconnectedCallback() {
+      if (super.disconnectedCallback) {
+        super.disconnectedCallback();
       }
       this.teardown$.next();
     }
